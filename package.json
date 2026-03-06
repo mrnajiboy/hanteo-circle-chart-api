@@ -1,0 +1,24 @@
+{
+  "name": "hanteo-circle-api",
+  "version": "1.0.0",
+  "description": "Hanteo / Circle Chart API wrapper",
+  "type": "module",
+  "scripts": {
+    "start": "node server.mjs",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "cleanup": "eslint . --fix && prettier --write ."
+  },
+  "dependencies": {
+    "express": "^4.19.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.0",
+    "eslint": "^10.0.0",
+    "eslint-config-prettier": "^10.0.0",
+    "globals": "^17.4.0",
+    "prettier": "^3.0.0"
+  }
+}
