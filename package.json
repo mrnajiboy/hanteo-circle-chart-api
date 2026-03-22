@@ -7,6 +7,9 @@
     "url": "https://github.com/mrnajiboy/hanteo-circle-chart-api"
   },
   "type": "module",
+  "bin": {
+    "hanteo-circle-chart-api": "server.mjs"
+  },
   "scripts": {
     "start": "node server.mjs",
     "lint": "eslint .",

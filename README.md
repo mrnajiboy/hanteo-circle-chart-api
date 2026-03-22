@@ -30,10 +30,12 @@ Then start it with:
 npx hanteo-circle-chart-api
 ```
 
-If you prefer a direct package runner invocation, you can also use:
+Once published with its CLI bin, that command runs the package entrypoint directly.
+
+If you prefer a one-off run without adding it to your project first, you can use:
 
 ```bash
-npx @hanteo-circle-chart-api
+npx hanteo-circle-chart-api
 ```
 
 ### Option 2: Run without installing globally
