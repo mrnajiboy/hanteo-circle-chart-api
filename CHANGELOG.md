@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.2](https://github.com/mrnajiboy/hanteo-circle-chart-api/compare/hanteo-circle-api-v1.1.1...hanteo-circle-api-v1.1.2) (2026-03-22)
+
+
+### Bug Fixes
+
+* add format step to ci ([65def1b](https://github.com/mrnajiboy/hanteo-circle-chart-api/commit/65def1bec990f4882c9cf7138c849b36bcaec17b))
+
 ## [1.1.1](https://github.com/mrnajiboy/hanteo-circle-chart-api/compare/hanteo-circle-api-v1.1.0...hanteo-circle-api-v1.1.1) (2026-03-22)
 
 
