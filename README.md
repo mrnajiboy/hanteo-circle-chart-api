@@ -588,6 +588,9 @@ npm run format
 
 # Check formatting without writing
 npm run format:check
+
+# Do lint + prettier format all at once.
+npm run cleanup 
 ```
 
 ### Tooling config files
@@ -657,4 +660,4 @@ Downstream consumers should treat:
 
 ## License / usage note
 
-MIT; But I'd recommned internal or personal use only.
+MIT, but I'd recommned internal or personal use only.
