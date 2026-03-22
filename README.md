@@ -12,7 +12,7 @@ It normalizes provider-specific route behavior, current issue selection, issue t
 
 This project uses native JSON requests only.
 
----
+----
 
 ## Table of contents
 
