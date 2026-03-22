@@ -3,6 +3,6 @@
 .vscode
 
 # dotenvx private key files — never commit these
-.env
-.env.keys
-.env*.keys
+*.env
+*.env.keys
+*.env*.keys
