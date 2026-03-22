@@ -12,6 +12,72 @@ It normalizes provider-specific route behavior, current issue selection, issue t
 
 ---
 
+## Installation
+
+Choose the setup style that fits how you want to use the API.
+
+### Option 1: Install from npm
+
+Install as a local project dependency:
+
+```bash
+npm install hanteo-circle-chart-api
+```
+
+Then start it with:
+
+```bash
+npx hanteo-circle-chart-api
+```
+
+If you prefer a direct package runner invocation, you can also use:
+
+```bash
+npx @hanteo-circle-chart-api
+```
+
+### Option 2: Run without installing globally
+
+You can boot the package directly from npm with `npx`:
+
+```bash
+npx hanteo-circle-chart-api
+```
+
+### Option 3: Clone from GitHub and run locally
+
+```bash
+git clone https://github.com/mrnajiboy/hanteo-circle-chart-api.git
+cd hanteo-circle-chart-api
+npm install
+npm start
+```
+
+### Option 4: Deploy to a server
+
+On your server or hosting environment:
+
+```bash
+git clone https://github.com/mrnajiboy/hanteo-circle-chart-api.git
+cd hanteo-circle-chart-api
+npm install
+npm start
+```
+
+By default the app starts with:
+
+```bash
+npm start
+```
+
+After startup, the API will be available from your deployed host and you can call endpoints such as:
+
+```bash
+curl "https://your-service-domain.com/v1/hanteo/album/daily"
+```
+
+---
+
 ## Table of contents
 
 - [Overview](#overview)
