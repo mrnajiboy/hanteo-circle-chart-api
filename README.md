@@ -82,6 +82,8 @@ src/
 package.json
 eslint.config.mjs
 .prettierrc
+release-please-config.json
+.release-please-manifest.json
 ```
 
 ---
