@@ -12,7 +12,7 @@
     "cleanup": "eslint . --fix && prettier --write ."
   },
   "dependencies": {
-    "express": "^4.19.0"
+    "express": "^5.2.1"
   },
   "devDependencies": {
     "@dotenvx/dotenvx": "^1.57.1",
