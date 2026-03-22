@@ -1,6 +1,6 @@
 // Load encrypted .env for local development only.
 // On hosted platforms (Render, CI, etc.) env vars are injected natively.
-const isHosted = process.env.RENDER || process.env.CI || process.env.RENDER_EXTERNAL_URL;
+const isHosted = process.env.RENDER || process.env.CI || process.env.SERVER_BASE_URL;
 if (!isHosted) {
   try {
     const dotenvx = await import("@dotenvx/dotenvx");
@@ -74,7 +74,7 @@ for (const { version, router } of versionRouters) {
 // START SERVER
 // ============================================================================
 app.listen(PORT, () => {
-  const host = process.env.RENDER_EXTERNAL_URL || `http://localhost:${PORT}`;
+  const host = process.env.SERVER_BASE_URL || `http://localhost:${PORT}`;
 
   console.log("\n" + "=".repeat(60));
   console.log("📊 Hanteo / Circle Chart API");
