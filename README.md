@@ -657,4 +657,4 @@ Downstream consumers should treat:
 
 ## License / usage note
 
-Internal or personal use unless otherwise specified by the repository owner.
+MIT; But I'd recommned internal or personal use only.
