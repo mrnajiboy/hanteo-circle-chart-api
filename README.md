@@ -1,5 +1,11 @@
 # Hanteo / Circle API Wrapper
 
+[![npm version](https://img.shields.io/npm/v/hanteo-circle-api?color=cb3837&logo=npm&label=npm)](https://www.npmjs.com/package/hanteo-circle-api)
+[![npm downloads](https://img.shields.io/npm/dm/hanteo-circle-api?color=cb3837&logo=npm)](https://www.npmjs.com/package/hanteo-circle-api)
+[![CI](https://github.com/mrnajiboy/hanteo-circle-chart-api/actions/workflows/ci.yml/badge.svg)](https://github.com/mrnajiboy/hanteo-circle-chart-api/actions/workflows/ci.yml)
+[![Socket Security](https://socket.dev/api/badge/npm/package/hanteo-circle-api)](https://socket.dev/npm/package/hanteo-circle-api)
+[![License](https://img.shields.io/github/license/mrnajiboy/hanteo-circle-chart-api)](LICENSE)
+
 A lightweight Node/Express JSON wrapper around public Hanteo and Circle Chart web/XHR endpoints.
 
 It normalizes provider-specific route behavior, current issue selection, issue timestamps, and historic override handling into stable versioned REST routes with a consistent JSON response shape.
