@@ -1033,6 +1033,54 @@ router.get("/", (req, res) => {
   });
 });
 
+router.get("/health", (req, res) => {
+  res.json({
+    status: "ok",
+    service: "Hanteo / Circle Chart API (JSON format, EN)",
+    version: ACTIVE_VERSION,
+    endpoints: {
+      hanteo: {
+        album: ["real", "daily", "weekly", "monthly", "yearly"].map((tf) =>
+          ep(`/hanteo/album/${tf}`)
+        ),
+        digital: ["real", "daily", "weekly", "monthly", "yearly"].map((tf) =>
+          ep(`/hanteo/digital/${tf}`)
+        ),
+        world: [
+          ep("/hanteo/world/global/weekly"),
+          ep("/hanteo/world/global/monthly"),
+          ep("/hanteo/world/global/yearly"),
+          ep("/hanteo/world/us/weekly"),
+          ep("/hanteo/world/jp/weekly"),
+          ep("/hanteo/world/cn/weekly"),
+        ],
+        social: ["weekly", "monthly"].map((tf) => ep(`/hanteo/social/${tf}`)),
+        star: ["weekly", "monthly", "yearly"].map((tf) => ep(`/hanteo/star/${tf}`)),
+        authentication: ["weekly", "monthly", "yearly"].map((tf) =>
+          ep(`/hanteo/authentication/${tf}`)
+        ),
+      },
+      circle: {
+        social: ["weekly", "monthly", "yearly"].map((tf) => ep(`/circle/social/${tf}`)),
+        global: ["daily", "weekly", "monthly", "yearly"].map((tf) => ep(`/circle/global/${tf}`)),
+        digital: ["weekly", "monthly", "yearly"].map((tf) => ep(`/circle/digital/${tf}`)),
+        streaming: ["weekly", "monthly", "yearly"].map((tf) => ep(`/circle/streaming/${tf}`)),
+        download: ["weekly", "monthly", "yearly"].map((tf) => ep(`/circle/download/${tf}`)),
+        bgm: ["weekly", "monthly"].map((tf) => ep(`/circle/bgm/${tf}`)),
+        vcoloring: ["weekly", "monthly", "yearly"].map((tf) => ep(`/circle/vcoloring/${tf}`)),
+        singingroom: ["weekly", "monthly"].map((tf) => ep(`/circle/singingroom/${tf}`)),
+        bell: ["weekly", "monthly"].map((tf) => ep(`/circle/bell/${tf}`)),
+        ring: ["weekly", "monthly"].map((tf) => ep(`/circle/ring/${tf}`)),
+        album: ["weekly", "monthly", "firsthalf", "yearly"].map((tf) => ep(`/circle/album/${tf}`)),
+        retail: [
+          ep("/circle/retail/hour"),
+          ...["daily", "weekly", "monthly", "yearly"].map((tf) => ep(`/circle/retail/${tf}`)),
+        ],
+      },
+    },
+  });
+});
+
 // ── Hanteo ───────────────────────────────────────────────────────────────────
 router.get("/hanteo/album/:timeframe", async (req, res) => {
   try {
