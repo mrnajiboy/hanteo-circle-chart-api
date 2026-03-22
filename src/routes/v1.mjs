@@ -986,7 +986,7 @@ function ep(path) {
 
 // ── Index ────────────────────────────────────────────────────────────────────
 router.get("/", (req, res) => {
-  res.json({
+  res.status(200).json({
     status: "ok",
     service: "Hanteo / Circle Chart API (JSON format, EN)",
     version: ACTIVE_VERSION,
@@ -1034,7 +1034,7 @@ router.get("/", (req, res) => {
 });
 
 router.get("/health", (req, res) => {
-  res.json({
+  res.status(200).json({
     status: "ok",
     service: "Hanteo / Circle Chart API (JSON format, EN)",
     version: ACTIVE_VERSION,
