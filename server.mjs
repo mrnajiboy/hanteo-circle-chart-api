@@ -65,6 +65,16 @@ app.get("/", (req, res) => {
   });
 });
 
+app.get("/health", (req, res) => {
+  res.status(200).json({
+    status: "ok",
+    service: "Hanteo / Circle Chart API",
+    active_version: ACTIVE_VERSION,
+    supported_versions: SUPPORTED_VERSIONS,
+    docs: `${VERSION_PREFIX}/`,
+  });
+});
+
 // ── Mount all supported versions ─────────────────────────────────────────────
 for (const { version, router } of versionRouters) {
   app.use(`/${version}`, router);
