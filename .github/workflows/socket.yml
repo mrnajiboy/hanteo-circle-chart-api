@@ -7,7 +7,7 @@ run-name: Socket Security Check
 
 on:
   push:
-    branches: ['**'] # Run on all branches, all commits
+    branches: ["**"] # Run on all branches, all commits
   pull_request:
     types: [opened, synchronize, reopened]
   issue_comment:
@@ -34,7 +34,7 @@ jobs:
 
       - uses: actions/setup-python@v5
         with:
-          python-version: '3.12'
+          python-version: "3.12"
 
       - name: Install Socket CLI
         run: pip install socketsecurity --upgrade
