@@ -10,7 +10,7 @@ A lightweight Node/Express JSON wrapper around public Hanteo and Circle Chart we
 
 It normalizes provider-specific route behavior, current issue selection, issue timestamps, and historic override handling into stable versioned REST routes with a consistent JSON response shape.
 
-> This project uses native JSON requests only.
+This project uses native JSON requests only.
 
 ---
 
