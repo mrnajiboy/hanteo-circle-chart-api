@@ -15,6 +15,7 @@
     "express": "^4.19.0"
   },
   "devDependencies": {
+    "@dotenvx/dotenvx": "^1.57.1",
     "@eslint/js": "^10.0.0",
     "eslint": "^10.0.0",
     "eslint-config-prettier": "^10.0.0",

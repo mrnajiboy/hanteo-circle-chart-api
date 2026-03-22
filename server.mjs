@@ -1,3 +1,15 @@
+// Load encrypted .env for local development only.
+// On hosted platforms (Render, CI, etc.) env vars are injected natively.
+const isHosted = process.env.RENDER || process.env.CI || process.env.RENDER_EXTERNAL_URL;
+if (!isHosted) {
+  try {
+    const dotenvx = await import("@dotenvx/dotenvx");
+    dotenvx.config();
+  } catch {
+    // dotenvx not installed — env vars must be set manually
+  }
+}
+
 import express from "express";
 import { ACTIVE_VERSION, VERSION_PREFIX, SUPPORTED_VERSIONS } from "./src/config/apiVersion.mjs";
 import { GLOBAL_LOG_LEVEL, LOG_LEVELS } from "./src/utils/logging.mjs";
